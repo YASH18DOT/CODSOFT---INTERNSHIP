@@ -1,0 +1,100 @@
+/* General body styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Calculator container with glassmorphism */
+.calculator {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  width: 300px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Display styles */
+.display {
+  background: rgba(0, 0, 0, 0.7);
+  color: #00ffcc;
+  font-size: 2.5em;
+  padding: 20px 15px;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0 0 10px #000;
+  overflow-x: auto;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+}
+
+/* General button styles */
+.btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  font-size: 1.3em;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(5px);
+}
+
+/* Hover and active effects */
+.btn:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Operator buttons with neon color */
+.operator {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 12px #ff6a00;
+}
+
+/* Clear button */
+#clear {
+  background: linear-gradient(135deg, #f44336, #e53935);
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0 0 10px #e53935;
+}
+
+/* Equal button spans across all columns */
+.equal {
+  grid-column: span 4;
+  background: linear-gradient(135deg, #00c9ff, #92fe9d);
+  color: #000;
+  font-size: 1.4em;
+  font-weight: bold;
+  box-shadow: 0 0 20px #00c9ff;
+  transition: 0.3s;
+}
+
+.equal:hover {
+  background: linear-gradient(135deg, #00e3ff, #b4ff9f);
+}
