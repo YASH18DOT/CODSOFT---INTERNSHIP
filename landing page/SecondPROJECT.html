@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page Project</title>
+  <link rel="stylesheet" href="SecondPROJECT.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Welcome to MY LANDING PAGE</h1>
+      <p>A simple and clean landing page built from scratch with HTML and CSS FOR A PROJECT FROM CODSOFT.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Main Features</h2>
+      <div class="feature-cards">
+        <div class="card">
+          <h3>Responsive Layout</h3>
+          <p>Works well on mobile, tablet, and desktop without any extra frameworks.</p>
+        </div>
+        <div class="card">
+          <h3>Easy to Customize</h3>
+          <p>Simple code with no unnecessary complexity so it's easy to edit.</p>
+        </div>
+        <div class="card">
+          <h3>Clean Design</h3>
+          <p>Neat sections, good spacing, and readable text for a better user experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About This Page</h2>
+      <p>This is a beginner-friendly project made to practice HTML and CSS skills. It focuses on creating a well-structured layout, using basic styling and simple design elements without relying on JavaScript or frameworks.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Your Mobile Number" pattern="[0-9]{10}" required title="Enter a 10-digit mobile number" />
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <label>
+          <input type="checkbox" required />
+          I am not a robot
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 LANDING PAGE. Made with HTML & CSS.</p>
+    <p>Contact NO. - 8690183802</p>
+  </footer>
+
+</body>
+</html>
