@@ -1,0 +1,146 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  overflow-x: hidden;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  animation: fadeDown 1.2s ease-out forwards;
+}
+
+/* Section Base */
+.section {
+  padding: 2rem 1rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+  transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skills-list li {
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #555;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.4s ease;
+}
+
+.project img:hover {
+  transform: scale(1.02);
+}
+
+/* Resume Link */
+#resume a {
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+#resume a:hover {
+  color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/* Keyframes for animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
